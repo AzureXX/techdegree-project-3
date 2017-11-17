@@ -31,7 +31,7 @@ fieldset {
 .desinline label,
 .desinline input,
 .desinline select {
-  display: block;
+  display: flex;
   width:100%;
 }
 
@@ -66,14 +66,15 @@ fieldset {
 }
 
 
-@media (min-width:768) {
+@media (min-width:768px) {
 
   .desinline {
-    display: inline-block;
+
   }
   .desinline label,
   .desinline input,
   .desinline select {
+    display: inline-flex;
     width:40%;
   }
 }
