@@ -1,0 +1,79 @@
+* {
+  box-sizing:border-box;
+  margin:0;
+  padding: 0;
+  font-family: "Merriweather", serif;
+}
+
+
+
+
+
+/* Labeling */
+
+header {
+  text-align: center;
+  border-bottom: 3px solid black;
+  margin-bottom: 4px;
+  padding: 5px;
+}
+
+
+html,
+fieldset {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.desinline label,
+.desinline input,
+.desinline select {
+  display: block;
+  width:100%;
+}
+p {
+  text-align: center;
+}
+
+
+fieldset,
+div {
+  flex-direction: column;
+}
+
+/*Styling*/
+
+p,
+label {
+  color: lightgrey;
+}
+
+
+fieldset {
+  border:0;
+  margin-top: 1em;
+
+}
+
+.primary,
+.secondary {
+    border-top: 2px solid black;
+}
+
+
+@media (min-width:768) {
+  .desinline {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .desinline input,
+  .desinline select{
+    width: 75%;
+  }
+
+  .desinline label {
+    width: 25%;
+  }
+}
