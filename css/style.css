@@ -6,75 +6,99 @@
 }
 
 
-html {
-  width: 90%;
-  margin: auto;
+body {
+  width:90%;
+  margin: 0 auto;
 }
-
-
 /* Labeling */
 
 header {
   text-align: center;
   border-bottom: 3px solid black;
   margin-bottom: 4px;
-  padding: 5px;
 }
+
 
 
 fieldset {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  border:0;
+  margin-top: 1em;
 }
 
 .desinline label,
 .desinline input,
 .desinline select {
-  display: flex;
+  display: inline-flex;
   width:100%;
 }
-
 
 p {
   text-align: center;
 }
 
-
-fieldset,
-div {
-  flex-direction: column;
+button {
+  width: 100%;
+  margin-left: 10px;
 }
 
+textarea {
+  width: 100%;
+}
 /*Styling*/
+input,
+select,
+textarea {
+  transition: background-color 2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: 2px dashed red;
+  background-color: lightgrey;
+}
+
+
+h1 {
+  background-color: #4C4C4C;
+  color: white;
+  margin: 0 -5vw 16px -5vw;
+}
 
 p,
 label {
-  color: lightgrey;
-}
-
-
-fieldset {
-  border:0;
-  margin-top: 1em;
-
+  color: grey;
 }
 
 .primary,
 .secondary {
     border-top: 2px solid black;
+
 }
 
+.primary {
+  background-color: #f1f1f1;
+}
 
 @media (min-width:768px) {
 
-  .desinline {
-
+  html {
+    width: 80%;
+    margin: 0 auto;
   }
-  .desinline label,
+
+  h1 {
+      margin: 0 -14vw 16px -14vw;
+  }
+
+  .desinline label {
+    width: 40%
+  }
   .desinline input,
   .desinline select {
-    display: inline-flex;
-    width:40%;
+    width: 59.7%;
   }
 }
