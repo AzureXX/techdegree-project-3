@@ -6,7 +6,10 @@
 }
 
 
-
+html {
+  width: 90%;
+  margin: auto;
+}
 
 
 /* Labeling */
@@ -19,7 +22,6 @@ header {
 }
 
 
-html,
 fieldset {
   display: flex;
   justify-content: center;
@@ -32,6 +34,8 @@ fieldset {
   display: block;
   width:100%;
 }
+
+
 p {
   text-align: center;
 }
@@ -63,17 +67,13 @@ fieldset {
 
 
 @media (min-width:768) {
+
   .desinline {
-    display: flex;
-    flex-direction: row;
+    display: inline-block;
   }
-
+  .desinline label,
   .desinline input,
-  .desinline select{
-    width: 75%;
-  }
-
-  .desinline label {
-    width: 25%;
+  .desinline select {
+    width:40%;
   }
 }
