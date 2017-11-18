@@ -14,10 +14,19 @@ body {
 
 header {
   text-align: center;
-  border-bottom: 3px solid black;
+  border-bottom: 5px solid black;
   margin-bottom: 4px;
 }
 
+h1 {
+    margin: 0 -5vw 16px -5vw;
+}
+
+h2,
+p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 
 fieldset {
@@ -47,30 +56,80 @@ button {
 textarea {
   width: 100%;
 }
+
+input,
+select,
+textarea,
+ {
+  margin: 1em auto;
+  padding: 2em;
+}
+
+input,
+select {
+  display: inline-block;
+  height: 2em;
+}
+
+.primary div input:last-child {
+  width: 40%;
+}
+
+.secondary label:not([for="other"]) {
+  margin-left: 1em;
+}
+
+footer p {
+  margin-bottom: 8em;
+}
+
+legend,
+.withoutfor {
+  margin: 0.5em 0;
+}
+.primary label {
+  margin: 0.5em 0;
+}
+
+.inline {
+  display: inline-flex;
+}
+
+.inline input{
+  margin-top: -6px;
+}
+
+
 /*Styling*/
+
 input,
 select,
 textarea {
+  text-align: right;
   transition: background-color 2s;
+  background-color: white;
+  border-radius: 10px;
 }
+
 
 input:focus,
 select:focus,
 textarea:focus {
   border: 2px dashed red;
   background-color: lightgrey;
+  text-align: left;
 }
 
 
 h1 {
   background-color: #4C4C4C;
   color: white;
-  margin: 0 -5vw 16px -5vw;
 }
 
 p,
 label {
   color: grey;
+
 }
 
 .primary,
@@ -82,6 +141,20 @@ label {
 .primary {
   background-color: #f1f1f1;
 }
+
+
+button {
+  background-color: turquoise;
+  color: white;
+  font-size: 1.5em;
+  margin-left: 0;
+}
+
+legend {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
 
 @media (min-width:768px) {
 
@@ -100,5 +173,9 @@ label {
   .desinline input,
   .desinline select {
     width: 59.7%;
+  }
+
+  .primary div input:last-child {
+    width: 10%;
   }
 }
