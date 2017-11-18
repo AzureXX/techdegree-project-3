@@ -59,8 +59,7 @@ textarea {
 
 input,
 select,
-textarea,
- {
+textarea {
   margin: 1em auto;
   padding: 2em;
 }
