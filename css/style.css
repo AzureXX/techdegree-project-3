@@ -91,7 +91,12 @@ legend,
 }
 
 .inline {
-  display: inline-block
+  display: inline-flex;
+}
+
+.inline input,
+.inline label {
+  margin: 0;
 }
 
 .inline input{
