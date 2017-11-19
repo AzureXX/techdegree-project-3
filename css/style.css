@@ -86,6 +86,10 @@ legend,
 .withoutfor {
   margin: 0.5em 0;
 }
+
+.withoutfor{
+  text-align: left;
+}
 .primary label {
   margin: 0.5em 0;
 }
